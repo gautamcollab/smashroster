@@ -16,7 +16,7 @@ function App() {
       <Fighter name={'Ganondorf'} color={'purple'} setVisible={setVisible}/>
       <Fighter name={'Sheik'} color={'lightskyblue'} setVisible={setVisible}/>
       </div>
-    <FighterScreen isVisible={visible}/>
+    <FighterScreen isVisible={visible} setVisible={setVisible}/>
     </div>
   );
 }

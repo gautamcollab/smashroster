@@ -1,30 +1,30 @@
 .App {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .fighters-grid {
   display: flex;
+  flex-wrap: wrap;
   background-color: #ccc;
   border: 1px solid #858585;
-  border-radius: 5px; 
+  border-radius: 5px;
   width: min-content;
-  min-height: 500px;
+  min-width: 840px;
+  height: min-content;
 }
 
 .fighter {
-  height: 200px; 
-  width: 200px; 
+  height: 200px;
+  width: 200px;
   background-color: red;
   transition: transform 0.3s;
-  background-position: 25% 50%;
   background-size: cover;
-  border: transparent;
+  border: 5px solid transparent;
   background-repeat: no-repeat;
 }
-
 
 .fighter:hover {
   transform: scale(1.1);
@@ -34,8 +34,8 @@ flex-direction: column;
 
 .fighter-screen {
   background-color: #fff;
-  border: 1px solid blue; 
-  width: 50%; 
+  border: 1px solid blue;
+  width: 50%;
   position: fixed;
   bottom: 0;
 }

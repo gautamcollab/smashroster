@@ -2,7 +2,7 @@
 
 const FighterScreen = ({isVisible, setVisible, selectedCharacter}) => {
     return(
-        <div onClick={() => {setVisible(false)}} 
+        <div onClick={() => {return (null)}} 
         className="fighter-screen" style={{display: isVisible ? "block" : "none"}}> 
         <span className="name-bg">{selectedCharacter.name}</span>
         <h2 className="name-fg">{selectedCharacter.name}</h2>
